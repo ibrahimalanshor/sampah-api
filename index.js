@@ -47,7 +47,7 @@ async function generateVerses() {
       await fs.promises.mkdir('output')
     }
 
-    await fs.promises.appendFile('output/verses.csv', csv)
+    await fs.promises.appendFile('output/verses.csv', csv + '\n')
   }
 }
 
